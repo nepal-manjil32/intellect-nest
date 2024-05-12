@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', 'serif';
+}
+
+body{
+    background-color: #FEFAF6;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/********** Nav Bar **********/
+.nav-bar{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar li{
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+.nav-bar #central-side{
+    font-size: 1.2rem;
+}
+
+.nav-bar #central-side{
+    margin-left: 60px;
+}
+
+.nav-bar #logo{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#mid-nav{
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    background-color: #FEFAF6;
+    border: 1px solid #FEFAF6;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    border: 1px solid #e0d7cd;
+    background-color: #e0d7cd;
+}
+
+
+/********** Central Body **********/
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #EADBC8;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+form input{
+    width: 15rem;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+form button{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #EADBC8;
+    border: solid #EADBC8;
+    font-size: 20px;
+    width: 6rem;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #e4ccad;
+}
+
+
+
+/********** Footer **********/
+footer{
+    background-color: #EADBC8;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

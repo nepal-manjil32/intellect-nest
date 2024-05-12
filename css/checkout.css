@@ -1,0 +1,40 @@
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+
+/* CSS to style the date input */
+input[type="date"] {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* Remove default arrow icon */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Add custom arrow icon */
+    background-image: url('path_to_your_custom_arrow_icon.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    /* Style placeholder text */
+    color: #495057; /* Placeholder text color */
+}
+
+/* Style placeholder text when date input is focused */
+input[type="date"]:focus::placeholder {
+    color: transparent; /* Hide placeholder text when focused */
+}
+
+/* Style placeholder text for WebKit browsers */
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field {
+    color: #495057; /* Placeholder text color */
+}
+

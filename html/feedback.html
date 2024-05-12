@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .feedback-container {
+        position: relative;
+    }
+    .feedback {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 1;
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    #toggleFeedback:hover + .feedback,
+    #feedbackFormContainer:hover {
+        display: block;
+    }
+    #feedbackFormContainer {
+        transition: 0.5s;
+    }
+</style>
+</head>
+<body>
+
+<div class="feedback-container">
+    <a href="#" id="toggleFeedback">Comment</a>
+    <div class="feedback" id="feedbackFormContainer">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm" action="submit_feedback.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="blogTopic">Blog Topic:</label>
+                <input type="text" id="blogTopic" name="blogTopic" required>
+            </div>
+            <div class="form-group">
+                <label for="feedbackRating">Feedback Rating:</label>
+                <select id="feedbackRating" name="feedbackRating" required>
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleFeedback').addEventListener('mouseenter', function() {
+        document.getElementById('feedbackFormContainer').style.display = 'block';
+        setTimeout(function() {
+            document.getElementById('feedbackFormContainer').style.display = 'none';
+        }, 5000); 
+    });
+    
+    document.getElementById('feedbackFormContainer').addEventListener('mouseleave', function() {
+        setTimeout(function() {
+            document.getElementById('feedbackFormContainer').style.display = 'none';
+        }, 5000);
+    });
+</script>
+
+</body>
+</html>

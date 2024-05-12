@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', 'serif';
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #FEFAF6;
+    z-index: 10;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    border: 0;
+}
+/********** Nav Bar **********/
+.nav-bar{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30vw;
+}
+
+#mid-nav{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+#mid-nav input{
+    padding: 5px;
+    width: 30vw;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#mid-nav button{
+    background-color: #FEFAF6;
+    border: 0;
+    width: 2rem;
+}
+
+#mid-nav button:hover{
+    cursor: pointer;
+}
+
+#right-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30vw;
+    gap: 2rem;
+}
+
+#right-nav #log_out{
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #EADBC8;
+    border: 0;
+    box-shadow: 2px 2px 2px rgb(119, 115, 115);
+}
+
+#right-nav #log_out:hover{
+    cursor: pointer;
+    background-color: #efd0a7;
+}
+
+#right-nav #profile{
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgb(119, 115, 115);
+    background-color: rgb(65, 64, 64, 0);
+}
+
+#right-nav #profile:hover{
+    cursor: pointer;
+    background-color: #efd0a7;
+}
+
+/********** Central Body **********/
+
+main{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.left-panel{
+    width: 20vw;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+}
+
+#new-post{
+    margin-top: 1rem;
+    width: 10vw;
+    background-color: #EADBC8;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px grey;
+    font-size: 1.2rem;
+}
+
+#new-post div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+#new-post:hover{
+    background-color: #e7c79f;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    width: 15vw;
+}
+
+#profile a{
+    border: 1px solid rgb(14, 14, 19);
+    color: rgb(110, 110, 121);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all ease-in 0.2s;
+
+}
+#profile a:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #e7c79f;
+}
+
+#view-blog div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#view-blog{
+    margin-bottom: 1rem;
+    width: 10vw;
+}
+
+.right-panel{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 15vw 15vw;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.right-panel a{
+    width: 20vw;
+    background-color: #ece9e5;
+    border-radius: 20px;
+    
+}
+
+.right-panel div{
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.right-panel div:hover{
+    background-color: #bebcba;
+}
+
+.right-panel div img{
+    width: 30%;
+}
+
+
+
+/********** Footer **********/
+footer{
+    background-color: #EADBC8;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

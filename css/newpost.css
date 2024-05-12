@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', 'serif';
+}
+
+body{
+    background-color: #FEFAF6;
+    z-index: 10;
+    /* overflow: hidden; */
+}
+
+/********** Nav Bar **********/
+.nav-bar{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-bar #logo{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+#right-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #EADBC8;
+    border: 0;
+    box-shadow: 2px 2px 2px rgb(119, 115, 115);
+}
+
+#right-nav a:hover{
+    cursor: pointer;
+    background-color: #efd0a7;
+}
+
+
+/********** Central Body **********/
+main{
+    margin: 2rem;
+    height: fit-content;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#main-title input{
+    padding: 1rem;
+    width:46vw;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #FEFAF6;
+    font-size: 1.5rem;
+}
+
+#main-title #title-text{
+    font-size: 2rem;
+}
+
+
+textarea{
+    font-size: 1.1rem;
+    border: 2px solid black;
+    padding: 5px;
+    text-align:justify;
+}
+#main-title label{
+    font-size: 1rem;
+}
+
+select{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #EADBC8;
+    border: 0;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px rgb(119, 115, 115);
+}
+
+select:hover{
+    background-color: #e8cca6;
+    cursor: pointer;
+}
+
+main #image{
+    padding: 5px;
+    width: 20vw;
+    font-size: 1rem;
+}
+
+
+#publish button{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #EADBC8;
+    border: 0;
+    box-shadow: 2px 2px 2px rgb(119, 115, 115);
+}
+
+#publish button:hover{
+    cursor: pointer;
+    background-color: #efd0a7;
+}
+
+#success_alert {
+    border: 3px solid green;
+    padding: 0.4rem;
+    border-radius: 10px;
+    background-color: rgb(191, 233, 191);
+    display: none; 
+}
+
+/********** Footer **********/
+footer{
+    background-color: #EADBC8;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

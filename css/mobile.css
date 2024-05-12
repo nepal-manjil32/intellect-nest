@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', 'serif';
+    /* text-decoration: none; */
+}
+
+/********** Nav Bar **********/
+.nav-bar{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-bar li{
+    list-style: none;
+    display: inline;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+#logo{
+    display: flexbox;
+    justify-content: center;
+    width: 50%;
+}
+
+#left-side{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/********** Central Body **********/
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.left-main{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-main{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-main img{
+    width: 80%;
+}
+
+
+
+
+/********** Footer **********/
+footer{
+    background-color: #EADBC8;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
