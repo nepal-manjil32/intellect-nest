@@ -1,1 +1,1 @@
-A blog website made in collaboration with my colleague( Github Id: Prashant2525).
+A comprehensive blog website created in collaboration with my colleague (GitHub ID: Prashant2525).
